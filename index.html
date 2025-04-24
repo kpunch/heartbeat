@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Heartbeat Health - Recruiting Prep Portfolio</title>
+
+<!-- ―――  CSS  ――― -->
+<style>
+/* -------- Color variables (Heartbeat palette) -------- */
+:root{
+  --navy:#0b1050;
+  --purple:#5f37ff;
+  --purple-light:#8d73ff;
+  --gray:#f5f6fa;
+  --text:#262a43;
+  --green:#2eb566;
+  --white:#ffffff;
+}
+
+/* Global reset */
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+body{background:var(--gray);color:var(--text);line-height:1.6;}
+
+/* -------- Header -------- */
+header{
+  background:var(--navy);
+  color:var(--white);
+  padding:2rem 1rem;
+  text-align:center;
+}
+header h1{font-size:2rem;font-weight:700;}
+header p{max-width:700px;margin:0.5rem auto 0;font-size:1rem;}
+
+/* -------- Intro card -------- */
+.intro{
+  background:var(--white);
+  margin:2rem auto;
+  padding:2rem;
+  max-width:900px;
+  border-radius:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+.intro h2{color:var(--purple);margin-bottom:1rem;font-size:1.5rem;}
+.intro p{margin-bottom:1rem;}
+.intro a{color:var(--purple);text-decoration:none;font-weight:600;}
+.intro a:hover{color:var(--purple-light);}
+
+/* -------- Accordion -------- */
+.accordion{max-width:900px;margin:0 auto 3rem;}
+.accordion-item{background:var(--white);border-radius:10px;margin-bottom:1rem;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.accordion-header{padding:1rem 1.25rem;font-weight:600;font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--purple);}
+.accordion-header span{display:inline-flex;align-items:center;gap:.5rem;}
+.accordion-header:hover{background:var(--gray);}
+.accordion-header::after{
+  content:"➕";font-size:1.2rem;transition:transform .3s ease;
+}
+.accordion-header.active::after{content:"➖";transform:rotate(180deg);}
+.accordion-content{max-height:0;transition:max-height .3s ease;padding:0 1.25rem;overflow:hidden;}
+.accordion-content-inner{padding:1rem 0 1.5rem;}
+
+/* -------- Tables -------- */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+}
+th,td{
+  border:1px solid #dfe1e7;
+  padding:.6rem;
+  text-align:left;
+}
+th{
+  background:var(--purple);
+  color:var(--white);
+  font-weight:600;
+}
+
+/* -------- Buttons -------- */
+.btn{
+  background:var(--green);
+  color:var(--white);
+  border:none;
+  padding:.65rem 1.25rem;
+  font-size:.95rem;
+  border-radius:6px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:.5rem;
+  transition:opacity .25s ease;
+}
+.btn:hover{opacity:.85;}
+
+/* -------- Footer -------- */
+footer{
+  text-align:center;
+  padding:3rem 1rem 2rem;
+  color:var(--text);
+  font-size:.85rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Heartbeat Health | Recruiting Prep Portfolio</h1>
+  <p>Curated research &amp; deliverables compiled via ChatGPT o3 in ~20 minutes.</p>
+</header>
+
+<!-- ―――  Intro section  ――― -->
+<section class="intro">
+  <h2>Hi Monica 👋</h2>
+  <p>
+    I know it can feel <em>wee-bit</em> unsettling to meet a candidate who hasn’t spent years recruiting for highly specialized clinical roles. 
+    That said, mission-driven companies are my natural habitat&mdash;from accelerating early-cancer detection at <strong>GRAIL</strong> to scaling virtual primary care at <strong>Babylon</strong>. 
+    The same curiosity and grit that powered those journeys is exactly what I’d bring to Heartbeat Health.
+  </p>
+  <p>
+    Everything you see below was assembled in ~20 minutes using my “<strong>Recursive Recruiting</strong>” workflow 
+    (<a href="https://coda.io/@talent-drive/recruiting-deep-dive/ai-recursive-recruiting-20" target="_blank">details here</a>).  
+    The framework lets me spin up research, outreach flows, screening rubrics, and interview guides at lightning speed,
+    then iterate as the hiring team refines direction.
+  </p>
+  <p>
+    I hope this snapshot reassures you that I ramp fast&mdash;and have a blast doing it.  
+    Looking forward to our chat!
+  </p>
+  <p style="font-weight:600;">~ Keith</p>
+</section>
+
+<!-- ―――  Accordion container  ――― -->
+<div class="accordion">
+
+  <!-- 1. Company Research -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>🔍 Company Research</span></div>
+    <div class="accordion-content">
+      <div class="accordion-content-inner">
+        <p><strong>Prompt:</strong> “Save the following information about the company.”</p>
+        <p><strong>Result:</strong> Key company details stored for quick reference (description, HQ NYC, founded 2017, 51–200 employees, specialties in cardiology &amp; tele-health, etc.).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Job Description Scrape -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>📑 Job-Description Scrape</span></div>
+    <div class="accordion-content">
+      <div class="accordion-content-inner">
+        <p><em>Structured snapshot of every open role on Heartbeat Health’s Lever page (24 Apr 2025).</em></p>
+
+        <h4 style="margin-top:1rem;">1&nbsp;·&nbsp;Additional&nbsp;Roles</h4>
+        <table>
+          <thead>
+            <tr><th>Title</th><th>Location</th><th>Team / Work</th><th>Synopsis</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>General Application</td>
+              <td>Remote</td>
+              <td>Additional Roles · Full-time · Remote</td>
+              <td>“Drop-your-CV” post …</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>2&nbsp;·&nbsp;Clinic – Echo Tech&nbsp;(Cardiac Sonographers)</h4>
+        <p>Table of nine part-time 1099 roles (PA, IL, TX, SC, IN, RI, MD, MO, OH) &mdash; identical scope, RDCS/CCI, mobile travel, etc.</p>
+
+        <h4>3&nbsp;·&nbsp;Clinic – Physicians</h4>
+        <p>Director of Prevention, Tele-Cardiologist roles, hybrid posts in Atlanta &amp; Denver, KY-licensed tele position.</p>
+
+        <h4>4&nbsp;·&nbsp;Operations</h4>
+        <p>Bilingual (Spanish) Clinical Services Coordinator &mdash; Remote, CST hours, full-time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Deliverables Snapshot -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>🛠️ Deliverables Snapshot</span></div>
+    <div class="accordion-content">
+      <div class="accordion-content-inner">
+        <p>Eight artifacts generated for each sample role (Cardiac Sonographer, Cardiologist – Director of Prevention, Clinical Services Coordinator):</p>
+        <ul style="margin-left:1.5rem;padding-left:.5rem;">
+          <li>High-level role explainers &amp; sourcing challenges/strategies</li>
+          <li>Hiring-manager intake forms</li>
+          <li>3-tier GEM outreach sequences (2 emails + 1 InMail) with placeholders</li>
+          <li>3 knock-out questions</li>
+          <li>Layered TA screener with example answers</li>
+          <li>HM screen guide</li>
+          <li>3 panel interview guides (specialist, bar-raiser, other)</li>
+          <li>Interview-competency rubrics (≤ 10 rows) &mdash; downloadable below</li>
+        </ul>
+
+        <!-- CSV buttons -->
+        <p><strong>Interview-Competency Rubrics:</strong></p>
+        <a href="./rubric1.csv" class="btn" download>Download CSV – Cardiac Sonographer</a><br/>
+        <a href="./rubric2.csv" class="btn" download>Download CSV – Cardiologist / Director of Prevention</a><br/>
+        <a href="./rubric3.csv" class="btn" download>Download CSV – Clinical Services Coordinator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Saved Links -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>🔗 Saved Scorecard Link</span></div>
+    <div class="accordion-content">
+      <div class="accordion-content-inner">
+        <p>The hiring-manager scorecard example for the Cardiac Sonographer role:</p>
+        <a href="https://docs.google.com/spreadsheets/d/186ZG2NBlXRf9iG3QpVZ5vJkX-PYywyWyXxygUMZOkKc/edit?usp=sharing"
+           class="btn" target="_blank" rel="noopener">Open Example Scorecard</a>
+      </div>
+    </div>
+  </div>
+
+  
+</div><!-- /accordion -->
+
+<footer>
+  © 2025 Keith P. | Built with ❤️, ChatGPT o3, and a splash of purple.
+</footer>
+
+<!-- ―――  JavaScript  ――― -->
+<script>
+/* Simple accordion toggle */
+document.querySelectorAll('.accordion-header').forEach(header=>{
+  header.addEventListener('click',()=>{
+    header.classList.toggle('active');
+    const content=header.nextElementSibling;
+    if(header.classList.contains('active')){
+      content.style.maxHeight=content.scrollHeight+'px';
+    }else{
+      content.style.maxHeight=null;
+    }
+  });
+});
+/* Expand first accordion by default */
+document.querySelector('.accordion-header').click();
+</script>
+</body>
+</html>
